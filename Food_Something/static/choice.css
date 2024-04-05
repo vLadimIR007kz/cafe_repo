@@ -12,6 +12,15 @@
     position: relative;
 }
 
+.container-2{
+    display: grid;
+    flex-direction: grid;
+    grid-template-columns: 500px 500px;
+    width: 100%;
+    grid-template-rows: 300px 300px;
+    border: none;
+}
+
 .sidebar{
     width: 30%;
     display: flex;
@@ -47,19 +56,17 @@
 }
 
 .list{
-    padding: 0 15% 0 5%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2% 0;
-    align-items: center;
-    justify-content: center;
+    align-items:stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .panel{
     display: flex;
     flex-direction: column;
-    border: 1px solid #000;
+    border: none;
     border-radius: 15px;
     padding: 3%;
     width: 100%;
@@ -71,7 +78,7 @@
 .part{
     width: fit-content;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 1%;
 }
 
@@ -110,17 +117,21 @@
 }
 
 .shop-info-button{
-    background-color: #8f3ba8;
+    background-color: #d1c4e9;
     border-style: none;
     font-family: Georgia;
     font-size: 16px;
-    border-radius: 25px;
+    border-radius: 10px;
     width: 150px;
     height: 70px;
     text-align: center;
     font-weight: lighter;
+    transition: 0.3s;
 }
-
+.shop-info-button:hover{
+ background-color: #8f3ba8;
+ color-opacity: 73%;
+}
 .shop-info-name{
     font-size: 20px;
     font-weight: lighter;
@@ -133,7 +144,13 @@
 }
 .panel{
 width: 450px;
-height: 300px;
+height: 250px;
 text-align:left;
 font-weight: lighter;
+}
+
+.oneline{
+display:flex;
+flex-direction: row;
+gap:5%;
 }
