@@ -12,12 +12,19 @@
     position: relative;
 }
 
+.Add{
+font-family: Georgia;
+font-weight: lighter;
+font-size: 26px;
+text-align: center;
+}
+
 .container-2{
     display: grid;
     flex-direction: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 450px 450px;
     width: 100%;
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 300px 300px 300px 300px;
     border: none;
 }
 
@@ -117,20 +124,23 @@
 }
 
 .shop-info-button{
+    margin-top: 17px;
     background-color: #d1c4e9;
     border-style: none;
     font-family: Georgia;
     font-size: 16px;
     border-radius: 10px;
-    width: 150px;
-    height: 70px;
+    width: 125px;
+    height: 50px;
     text-align: center;
     font-weight: lighter;
     transition: 0.3s;
+    background-color: #8f3ba8;
+
 }
 .shop-info-button:hover{
- background-color: #8f3ba8;
- color-opacity: 73%;
+
+ opacity:75%;
 }
 .shop-info-name{
     font-size: 20px;
@@ -143,14 +153,16 @@
 
 }
 .panel{
-width: 450px;
+width: 400px;
 height: 250px;
 text-align:left;
 font-weight: lighter;
+margin-left:80px;
+margin-top:20px;
+transition: 0.3s ease;
 }
-
-.oneline{
-display:flex;
-flex-direction: row;
-gap:5%;
+.panel:hover{
+border-style: solid;
+border-color: #8f3ba8;
+border-width: 1px;
 }
