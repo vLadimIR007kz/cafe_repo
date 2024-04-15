@@ -16,31 +16,34 @@
     <div class="navbar">
         {% include "base.html" %}
     </div>
-    <div class="container">
-        <div class="sidebar">
-            <div class="sidetext">
-                <p>Сортировка</p>
-                <ul>
-                    <li><button>Рейтинг</button></li>
-                    <li><button>Популярность</button></li>
-                    <li><button>Стоимость</button></li>
-                </ul>
-                <p>Фильтры</p>
-                <ul>
-                    <li><button>Завтраки</button></li>
-                    <li><button>Фастфуд</button></li>
-                    <li><button>Азиатская кухня</button></li>
-                    <li><button>Стритфуд</button></li>
-                </ul>
-            </div>
-        </div>
+<div class="smt">
+<div class="map">
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c62df069360c3a234e54e37c49890fd173314db09f57198c14128c280d610d9&amp;width=654&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script></div>
+<div class="filter">
+    <select name="selectArea" id="selectArea" class="form-control">
+        <option value="all" selected="">Вид кухни</option>
+        <option value="1">Азиатская</option>
+        <option value="2">Американская</option>
+        <option value="3">Индийская</option>
 
+    </select>
 
+    <select name="selectArea" id="selectArea" class="form-control">
+        <option value="all" selected="">Рейтинг</option>
+        <option value="1">★</option>
+        <option value="2">★★</option>
+        <option value="3">★★★</option>
+        <option value="4">★★★★</option>
+        <option value="5">★★★★★</option>
+    </select>
 
-<div class="col"><h1 class="heading">Заведения г.Караганда</h1>
+    <select name="selectArea" id="selectArea" class="form-control">
+        <option value="all" selected="">Популярные</option>
+    </select>
+</div>
+</div>
 
-
-        <div class="container-2">
+    <div class="container-2">
             <div class="list">
             <div class="panel">
 
