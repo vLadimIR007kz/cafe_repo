@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 100px;
     text: lighter;
-    background-color: #ebdcb2;
+    background-color: #fff;
 }
 
 .container{
@@ -24,10 +24,18 @@ text-align: center;
 .container-2{
     display: grid;
     flex-direction: grid;
-    grid-template-columns: 450px 450px 450px;
+    grid-template-columns: auto auto auto;
     width: 80%;
     grid-template-rows: repeat(3, 300px);
     border: none;
+
+}
+
+@media screen and (max-width: 1470px){
+    .container-2{
+        grid-template-columns: auto auto;
+        align-self: center;
+    }
 }
 
 .sidebar{
@@ -103,7 +111,7 @@ margin-left: 170px;
     padding: 3%;
     width: 100%;
     height: fit-content;
-    background-color: #c9a66b;
+    background-color: #ffe4b9;
     margin-bottom: 2%;
 }
 
