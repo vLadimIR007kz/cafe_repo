@@ -1,28 +1,31 @@
 .mainpage{
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
 }
 
 .card{
-    position: static;
-    width: 70%;
-    margin: 5% 15%;
-    background-color: #d1c4e9;
+    position: relative;
+    width: 100%;
+    height: 300px;
     box-shadow: 4px 4px 2px 1px rgba(204, 204, 204, .4  );
     border-radius: 15px;
-    padding: 1%;
+    background-color: #ED6A5A;
+    background-image: url('static/img.png');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5%;
 }
 
-.desc{
+.title{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 1%;
-
-}
-
-.desc img{
-    float: left;
+    height: 100%
+    max-width: 100%;
+    padding-top: 17%;
+    padding-left: 5%;
 }
 
 .desc p{
@@ -38,10 +41,20 @@
     gap: 1%;
 }
 
-h2{
-    font-weight: 400;
+.tittle h2{
+    font-weight: 800;
 }
 
+.current h2{
+    font-size: 35px;
+    font-weight: 1000;
+}
+
+.current{
+    position: relative;
+    width: 100%;
+    margin-bottom: 7%;
+}
 
 .slideshow-container {
   max-width: 1000px;
@@ -91,12 +104,26 @@ h2{
 }
 
 .numbertext {
-  color: #fff;
+  color: #000;
   font-size: 20px;
-  font-weight: 1000;
-  padding: 8px 12px;
+  font-weight: 800;
+  padding: 530px 12px;
   position: absolute;
   top: 0;
+}
+
+.nametext {
+  color: #000;
+  font-size: 25px;
+  font-weight: 800;
+  padding: 480px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.menu h2{
+    font-size: 35px;
+    font-weight: 1000;
 }
 
 .container{
@@ -143,11 +170,20 @@ h2{
 
 .faq-content {
   margin: 0 auto;
+   width: 80%;
+   justify-content: space-between;
+   display: grid;
+   grid-template-columns: repeat(3, auto);
+   gap: 2%;
+   margin-bottom: 5%;
 }
 
 .faq-question {
   padding: 20px 0;
   border-bottom: 1px dotted #d1c4e9;
+    text-align: center;
+    border: 1px solid #000;
+    height: fit-content;
 }
 
 .panel-title {
@@ -162,17 +198,25 @@ h2{
 
 .panel-content {
   font-size: 20px;
-  padding: 0px 14px;
-  margin: 0 40px;
+  padding-top: 40px;
   height: 0;
   overflow: hidden;
   z-index: -1;
-  position: relative;
+  position: absolute;
+  width: 100%;
   opacity: 0;
   -webkit-transition: .4s ease;
   -moz-transition: .4s ease;
   -o-transition: .4s ease;
   transition: .4s ease;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+   display: flex;
+}
+
+.panel-container{
+    display: flex;
+    flex-direction: column;
 }
 
 .panel:checked ~ .panel-content{
@@ -211,21 +255,67 @@ h2{
   display: none;
 }
 
-.faq-content{
-    width: 80%;
-    justify-content: space-between;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 2%;
-}
-
-.faq-question{
-    text-align: center;
-    border: 1px solid #000;
-    height: fit-content;
-}
-
 .menu{
     text-align: center;
-    margin-bottom: 1%;
+    margin-bottom: 30px;
+}
+
+.list{
+    margin: 0 auto;
+    max-width: 80%;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.panel1{
+    position: relative;
+    max-width: 30%;
+    border-radius: 10px;
+    background-color: #FFE4B9;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 3%;
+}
+
+.order-button{
+    background-color: #ED6A5A;
+    padding: 7px 15px 7px 15px;
+    border-radius: 15px;
+    border: none;
+}
+
+.order-button:hover{
+    box-shadow: 0px 0px 10px #ED6A5A;
+    cursor: pointer;
+}
+
+.about-rest{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.description{
+    display: flex;
+    flex-direction: raw;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.text-descr{
+    position: relative;
+    width: 50%;
+}
+
+.map-descr{
+    position: relative;
+    width: 30%;
 }

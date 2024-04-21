@@ -16,17 +16,9 @@
         <div class="navbar">
             {% include "base.html" %}
         </div>
-        <div class="card">
-            <div class="desc">
-                <img src="static/img.png" width="20%" alt="smth">
-                <div class="name">
-                    <h2>Name</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias cupiditate debitis dolore eaque id in incidunt laborum, minus natus nostrum obcaecati quasi reiciendis, sapiente soluta sunt totam voluptatem voluptates!</p>
-                </div>
-            </div>
-            <div class="contacts">
-                <p>Address</p>
-                <p>phone_number</p>
+        <div class="card" style="background-image: url('static/img.png'); background-size: cover; background-position: center;">
+            <div class="title">
+                <h2>Name</h2>
             </div>
         </div>
 
@@ -36,21 +28,25 @@
         </div>
         <div class="slideshow-container">
   <div class="pic" style="display: none;justify-content: center;">
+      <div class="nametext" style="display: none;">name1</div>
       <div class="numbertext" style="display: none;">100тг</div>
           <img src="static\img.png" style="width:75%; border-radius: 20px;">
   </div>
 
   <div class="mySlides fade" style="display: none;justify-content: center;">
+      <div class="nametext">name1</div>
     <div class="numbertext">100тг</div>
         <img src="static\img.png" style="width:75%; border-radius: 20px;">
   </div>
 
   <div class="mySlides fade" style="display: none;justify-content: center;">
+      <div class="nametext">name2</div>
     <div class="numbertext">200тг</div>
         <img src="static\img.png" style="width:75%; border-radius: 20px;">
   </div>
 
   <div class="mySlides fade" style="display: flex;justify-content: center;">
+      <div class="nametext">name3</div>
     <div class="numbertext">300тг</div>
     <img src="static\img.png" style="width:75%; border-radius: 20px;">
   </div>
@@ -68,19 +64,100 @@
         </div>
 
         <div class="menu">
-            <h1>Меню</h1>
+            <h2>Основное меню</h2>
+
+            <div class="list">
+            <div class="panel1">
+                        <img src="static/img.png" width="70%" alt="smth">
+                         <h3 class="food-name">Name</h3>
+                         <br>
+                         <p class="food-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                         <br>
+                <div class="oneline">
+                    <span class="food-price">1000</span>
+                    <span> <button class="order-button">Заказать</button> </span>
+            </div>
+            </div>
+
+<div class="panel1">
+                        <img src="static/img.png" width="70%" alt="smth">
+                         <h3 class="food-name">Name</h3>
+                         <br>
+                         <p class="food-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                         <br>
+                <div class="oneline">
+                    <span class="food-price">1000</span>
+                    <span> <button class="order-button">Заказать</button> </span>
+            </div>
+            </div>
+
+                <div class="panel1">
+                        <img src="static/img.png" width="70%" alt="smth">
+                         <h3 class="food-name">Name</h3>
+                         <br>
+                         <p class="food-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                         <br>
+                <div class="oneline">
+                    <span class="food-price">1000</span>
+                    <span> <button class="order-button">Заказать</button> </span>
+            </div>
+            </div>
+
+                 <div class="panel1">
+                        <img src="static/img.png" width="70%" alt="smth">
+                         <h3 class="food-name">Name</h3>
+                         <br>
+                         <p class="food-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                         <br>
+                <div class="oneline">
+                    <span class="food-price">1000</span>
+                    <span> <button class="order-button">Заказать</button> </span>
+            </div>
+            </div>
+
+<div class="panel1">
+                        <img src="static/img.png" width="70%" alt="smth">
+                         <h3 class="food-name">Name</h3>
+                         <br>
+                         <p class="food-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                         <br>
+                <div class="oneline">
+                    <span class="food-price">1000</span>
+                    <span> <button class="order-button">Заказать</button> </span>
+            </div>
+            </div>
+
+                <div class="panel1">
+                        <img src="static/img.png" width="70%" alt="smth">
+                         <h3 class="food-name">Name</h3>
+                         <br>
+                         <p class="food-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                         <br>
+                <div class="oneline">
+                    <span class="food-price">1000</span>
+                    <span> <button class="order-button">Заказать</button> </span>
+            </div>
+            </div>
+
+
+                </div>
+            </div>
+
+
+
+
+
+
             <div class="faq-content">
   <div class="faq-question">
     <input id="q1" type="checkbox" class="panel">
     <div class="plus">+</div>
     <label for="q1" class="panel-title">Фастфуд</label>
-    <div class="panel-content">
-        <img src="static\img.png" width="100%; " alt="picture_of_food">
-        <div class="price"><p>1000</p></div>
-        <img src="static\img.png" width="100%; " alt="picture_of_food">
-        <div class="price"><p>1000</p></div>
-    </div>
+        <div class="panel-content"><img src="static\img_2.png" width="100%; " alt="picture_of_food">
+        <div class="price"><p>2000</p></div>
+</div>
   </div>
+                </div>
 
   <div class="faq-question">
     <input id="q2" type="checkbox" class="panel">
@@ -104,7 +181,35 @@
 
         </div>
 
-
+<div class="about-rest">
+    <h2> О заведении:</h2>
+    <div class="description">
+    <div class="text-descr">
+    <div class="descr">
+        <p> Описание: </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias cupiditate debitis dolore eaque id in incidunt laborum, minus natus nostrum obcaecati quasi reiciendis, sapiente soluta sunt totam voluptatem voluptates!</p>
     </div>
+    <br>
+    <div class="cuisines">
+        <p> Кухни: </p>
+        <p> cuisine1, cuisine2, cuisine3 </p>
+    </div>
+    <br>
+    <div class="phone">
+        <p> Номер телефона: </p>
+        <p> phone number </p>
+    </div>
+    <br>
+    <div class="working-days">
+        <p> Рабочие дни: </p>
+        <p> пн-вс, 10.00-21.00 </p>
+    </div>
+    </div>
+    <div class="map-descr">
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c62df069360c3a234e54e37c49890fd173314db09f57198c14128c280d610d9&amp;width=654&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+</div>
+</div>
+
 </body>
 </html>
